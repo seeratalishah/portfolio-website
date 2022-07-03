@@ -1,0 +1,163 @@
+/* Website variables */
+
+:root {
+    --main-color: #16161A;
+}
+
+/* Reset styles */
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styles */
+
+nav{
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+nav button{
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bolder;
+
+}
+
+.logo{
+    font-family: 'The Nautigal', cursive;
+    font-size: 48px;
+}
+
+nav button:hover{
+    color: var(--main-color);
+    background-color: white;
+}
+
+@media screen and (min-width: 1024px){
+    nav{
+        padding-inline: 80px;
+    }
+}
+
+
+/* Header Styles  */
+
+header{
+    background-color: var(--main-color);
+    color: white;
+    padding: 40px 20px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    background-color: #EC774D;
+    padding: 8px 32px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+header h1{
+    margin-bottom: 20px;
+}
+
+header p{
+    margin-bottom: 30px;
+}
+
+header .right-container{
+background-image: url(../asstes/header-imagee.png);
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header .left-container{
+    margin-bottom: 60px;
+}
+
+@media screen and (min-width:768px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    header .left-container{
+        width: 40%;
+
+    }
+}
+
+@media screen and (min-width:1024px){
+    header {
+        padding-inline: 80px;
+        
+    }
+
+    header .left-container{
+        width: 60%;
+    }
+
+}
+
+/* skill section styles  */
+
+.skill-section{
+    padding: 40px 20px;
+}
+
+.skill-box{
+    background-color: #EC774D;
+    padding: 30px;
+    color: white;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.skill-box .material-symbols-outlined{
+    font-size: 4rem;
+    color: #01BF9D;
+}
+
+.skill-box h3{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.skill-box .small-text{
+    opacity: 0.66;
+}
+
+@media  screen and (min-width:600px) {
+    .skill-box-container{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .skill-section h2{
+        text-align: center;
+    }
+    
+}
+
